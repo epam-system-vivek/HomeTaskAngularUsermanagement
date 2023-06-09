@@ -1,0 +1,5 @@
+<div
+  [ngClass]="{ 'active-user': !user.isDeleted, 'deleted-user': user.isDeleted }"
+>
+  <div>{{ user.firstName }} {{ user.lastName }}</div>
+</div>
