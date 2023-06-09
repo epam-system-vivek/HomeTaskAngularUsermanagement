@@ -1,0 +1,20 @@
+.active-user {
+  border: 1.5px solid green;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+button {
+  background-color: red;
+  color: white;
+  padding: 5px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.container .card-body {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container .card-body button {
+  align-self: flex-end;
+}

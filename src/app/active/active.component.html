@@ -1,0 +1,24 @@
+<!-- <h2>Active Users</h2>
+<div class="user-list">
+  <app-user *ngFor="let user of activeUsers" [user]="user"></app-user>
+</div> -->
+<div class="container">
+  <h2>Active Users</h2>
+  <div class="row">
+    <div
+      class="col-md-6"
+      *ngFor="let user of activeUsers"
+      [ngClass]="{ 'active-user': user.isActive }"
+    >
+      <div class="card mb-3">
+        <div class="card-body">
+          <h5 class="card-title">{{ user.firstName }} {{ user.lastName }}</h5>
+
+          <button class="btn btn-danger" (click)="deactivateUser(user)">
+            Deactivate
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
